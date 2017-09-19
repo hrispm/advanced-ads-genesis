@@ -1,0 +1,87 @@
+<?php
+
+/*
+ * load common and WordPress based resources
+ *
+ * @since 1.0.0
+ */
+
+class Advanced_Ads_Genesis_Plugin {
+
+        /**
+	 *
+	 * @var Advanced_Ads_Genesis_Plugin
+	 */
+	protected static $instance;
+
+	/**
+	 * plugin options
+	 *
+	 * @var     array (if loaded)
+	 */
+	protected $options = false;
+
+        /**
+         * name of options in db
+         *
+         * @car     string
+         */
+        public $options_slug;
+
+
+	private function __construct() {
+		add_action( 'plugins_loaded', array( $this, 'wp_plugins_loaded' ) );
+	}
+
+	/**
+	 *
+	 * @return Advanced_Ads_Genesis_Plugin
+	 */
+	public static function get_instance() {
+		// If the single instance hasn't been set, set it now.
+		if ( null === self::$instance ) {
+		self::$instance = new self;
+		}
+
+		return self::$instance;
+	}
+
+        /**
+         * load actions and filters
+         *
+         * @todo include more of the hooks used in public and admin class
+         */
+	public function wp_plugins_loaded() {
+            // stop, if main plugin doesn’t exist
+            if ( ! class_exists( 'Advanced_Ads', false ) ) {
+                return ;
+            }
+	    
+	    $this->load_plugin_textdomain();
+
+            $this->options_slug =  ADVADS_SLUG . '-slider';
+	}
+	
+	/**
+	 * Load the plugin text domain for translation.
+	 *
+	 * @since    1.0.2
+	 */
+	public function load_plugin_textdomain() {
+	       // $locale = apply_filters('advanced-ads-plugin-locale', get_locale(), $domain);
+	       load_plugin_textdomain( 'genesis-ads', false, AAG_BASE_DIR . '/languages' );
+	}
+
+        /**
+         * load advanced ads settings
+         */
+        public function options(){
+            // don’t initiate if main plugin not loaded
+            if(!class_exists('Advanced_Ads')) {
+		return array();
+	    }
+
+            return Advanced_Ads::get_instance()->options();
+        }
+}
+
