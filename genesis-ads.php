@@ -26,7 +26,7 @@ define('AAG_BASE_URL', plugin_dir_url(__FILE__));
 define('AAG_BASE_DIR', dirname( plugin_basename( __FILE__ ) ) ); // directory of the plugin without any paths
 
 // plugin slug and textdoamin
-define('AAG_SLUG', 'genesis-ads');
+define('AAG_SLUG', 'advanced-ads-genesis');
 
 define( 'AAG_VERSION', '1.0.3' );
 define( 'AAG_PLUGIN_URL', 'https://wpadvancedads.com' );

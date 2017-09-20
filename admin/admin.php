@@ -49,7 +49,7 @@ class Advanced_Ads_Genesis_Admin {
 	 * show warning if Advanced Ads js is not activated
 	 */
 	public function missing_plugin_notice(){
-		echo '<div class="error"><p>' . sprintf( __( '<strong>Advanced Ads – Genesis Ads</strong> is an extension for the Advanced Ads plugin. Please visit <a href="%s" target="_blank" >wpadvancedads.com</a> to download it for free.', 'genesis-ads' ), 'https://wpadvancedads.com' ) . '</p></div>';
+		echo '<div class="error"><p>' . sprintf( __( '<strong>Advanced Ads – Genesis Ads</strong> is an extension for the Advanced Ads plugin. Please visit <a href="%s" target="_blank" >wpadvancedads.com</a> to download it for free.', 'advanced-ads-genesis' ), 'https://wpadvancedads.com' ) . '</p></div>';
 	}
 
 	/**
@@ -63,8 +63,8 @@ class Advanced_Ads_Genesis_Admin {
 
 		// fixed header bar
 		$types['genesis'] = array(
-		    'title' => __( 'Genesis Positions', 'genesis-ads' ),
-		    'description' => __( 'Various positions for the Genesis theme.', 'genesis-ads' ),
+		    'title' => __( 'Genesis Positions', 'advanced-ads-genesis' ),
+		    'description' => __( 'Various positions for the Genesis theme.', 'advanced-ads-genesis' ),
 		    'image' => AAG_BASE_URL . 'admin/assets/img/genesis.png',
 		);
 
@@ -85,10 +85,10 @@ class Advanced_Ads_Genesis_Admin {
 
 			// warning if no Genesis theme installed
 			if( !defined( 'PARENT_THEME_NAME') || 'Genesis' !== PARENT_THEME_NAME ) :
-			    ?><p class="advads-error-message"><?php echo __('No Genesis theme detected', 'genesis-ads' ); ?></p><?php
+			    ?><p class="advads-error-message"><?php echo __('No Genesis theme detected', 'advanced-ads-genesis' ); ?></p><?php
 			endif;
 
-			?><label><?php _e( 'position', 'genesis-ads' ); ?></label>
+			?><label><?php _e( 'position', 'advanced-ads-genesis' ); ?></label>
 			<select name="advads[placements][<?php echo $placement_slug; ?>][options][genesis_hook]">
 			    <option>---</option>
 			    <?php foreach( $genesis_positions as $_group => $_positions ) : ?>
@@ -99,7 +99,7 @@ class Advanced_Ads_Genesis_Admin {
 				</optgroup>
 			    <?php endforeach; ?>
 			</select>
-			<p class="description"><?php printf( __('You can find an explanation of the hooks in the <a href="%s" target="_blank">Genesis Hook Reference</a>', 'genesis-ads' ), 'http://my.studiopress.com/docs/hook-reference/' ); ?></p>
+			<p class="description"><?php printf( __('You can find an explanation of the hooks in the <a href="%s" target="_blank">Genesis Hook Reference</a>', 'advanced-ads-genesis' ), 'http://my.studiopress.com/docs/hook-reference/' ); ?></p>
 			    <?php
 		}
 	}
@@ -114,20 +114,20 @@ class Advanced_Ads_Genesis_Admin {
 		// list of all hooks http://my.studiopress.com/docs/hook-reference/#structural-action-hooks
 		// only used the ones for public output in frontend here
 		return array(
-			__( 'Header', 'genesis-ads' ) => array(
+			__( 'Header', 'advanced-ads-genesis' ) => array(
 			    'before_header',
 			    'header',
 			    'after_header',
 			    'site_title',
 			    'site_description',
 			),
-			__( 'Wrapper', 'genesis-ads' ) => array(
+			__( 'Wrapper', 'advanced-ads-genesis' ) => array(
 			    'before_content_sidebar_wrap',
 			    'after_content_sidebar_wrap',
 			    'before_content',
 			    'after_content',
 			),
-			__( 'Sidebar', 'genesis-ads' ) => array(
+			__( 'Sidebar', 'advanced-ads-genesis' ) => array(
 			    'sidebar',
 			    'before_sidebar_widget_area',
 			    'after_sidebar_widget_area',
@@ -135,14 +135,14 @@ class Advanced_Ads_Genesis_Admin {
 			    'before_sidebar_alt_widget_area',
 			    'after_sidebar_alt_widget_area',
 			),
-			__( 'Loop', 'genesis-ads' ) => array(
+			__( 'Loop', 'advanced-ads-genesis' ) => array(
 			    'before_loop',
 			    'loop',
 			    'after_loop',
 			    'after_endwhile',
 			    'loop_else',
 			),
-			__( 'Content', 'genesis-ads' ) => array(
+			__( 'Content', 'advanced-ads-genesis' ) => array(
 			    'before_entry',
 			    'after_entry',
 			    'entry_header',
@@ -159,7 +159,7 @@ class Advanced_Ads_Genesis_Admin {
 			    'post_content',
 			    'after_post_content',
 			),
-			__( 'Comments & Pings', 'genesis-ads' ) => array(
+			__( 'Comments & Pings', 'advanced-ads-genesis' ) => array(
 			    'before_comments',
 			    'comments',
 			    'after_comments',
@@ -174,7 +174,7 @@ class Advanced_Ads_Genesis_Admin {
 			    'comment_form',
 			    'after_comment_form'
 			),
-			__( 'Footer', 'genesis-ads' ) => array(
+			__( 'Footer', 'advanced-ads-genesis' ) => array(
 			    'before_footer',
 			    'footer',
 			    'after_footer',

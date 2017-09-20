@@ -69,7 +69,7 @@ class Advanced_Ads_Genesis_Plugin {
 	 */
 	public function load_plugin_textdomain() {
 	       // $locale = apply_filters('advanced-ads-plugin-locale', get_locale(), $domain);
-	       load_plugin_textdomain( 'genesis-ads', false, AAG_BASE_DIR . '/languages' );
+	       load_plugin_textdomain( 'advanced-ads-genesis', false, AAG_BASE_DIR . '/languages' );
 	}
 
         /**
