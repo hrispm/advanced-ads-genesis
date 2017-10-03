@@ -8,7 +8,7 @@
  * Version:           1.0.3
  * Author:            Thomas Maier
  * Author URI:        https://wpadvancedads.com
- * Text Domain:       genesis-ads
+ * Text Domain:       advanced-ads-genesis
  * Domain Path:       /languages
  */
 
