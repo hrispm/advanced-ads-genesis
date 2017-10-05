@@ -2,8 +2,8 @@
 Contributors: webzunft
 Tags: genesis, adsense, ads, ad, amazon, adverts, advertisement, affiliate, banner, rotation, geotarget, studiopress
 Requires at least: 4.2
-Tested up to: 4.8.1
-Stable tag: 1.0.3
+Tested up to: 4.8
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,6 +55,10 @@ The Genesis Ads plugin is based on the free Advanced Ads plugin, a simple and po
 You can use Advanced Ads along any other ad management plugin and don’t need to switch completely.
 
 == Changelog ==
+
+= 1.0.4 =
+
+* fixed more text domains
 
 = 1.0.3 =
 
