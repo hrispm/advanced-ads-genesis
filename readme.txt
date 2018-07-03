@@ -1,4 +1,4 @@
-=== Genesis Ads ===
+=== Genesis Ads by Advanced Ads ===
 Contributors: webzunft
 Tags: genesis, adsense, ads, ad, amazon, adverts, advertisement, affiliate, banner, rotation, geotarget, studiopress
 Requires at least: 4.2
@@ -18,7 +18,7 @@ In order to use Genesis Ads, you also need
 * a theme based on the Genesis Framework built by StudioPress,
 * the free ad management plugin [Advanced Ads](http://wordpress.org/plugins/advanced-ads/).
 
-This combination allows you to inject ads like AdSense, Amazon, Images, etc. managed by Advanced Ads into the predefined positions (called “action hooks“ many Genesis based themes have included in the frontend.
+This combination with Advanced Ads allows you to inject ads like AdSense, Amazon, Images, etc. managed by Advanced Ads into the predefined positions (called “action hooks“ many Genesis based themes have included in the frontend.
 Please be aware that your theme author might have left some of them out. Also, the styling of the content added by these hooks depends on your theme. Please contact your theme developer about styling issues.
 
 = Positions for ads =
