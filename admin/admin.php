@@ -49,7 +49,14 @@ class Advanced_Ads_Genesis_Admin {
 	 * Show warning if Advanced Ads js is not activated.
 	 */
 	public function missing_plugin_notice() {
-		echo '<div class="error"><p>' . sprintf( __( '<strong>Advanced Ads – Genesis Ads</strong> is an extension for the Advanced Ads plugin. Please visit <a href="%s" target="_blank" >wpadvancedads.com</a> to download it for free.', 'advanced-ads-genesis' ), 'https://wpadvancedads.com' ) . '</p></div>';
+		$plugins = get_plugins();
+		if( isset( $plugins['advanced-ads/advanced-ads.php'] ) ){ // is installed, but not active
+			$link = '<a class="button button-primary" href="' . wp_nonce_url( 'plugins.php?action=activate&amp;plugin=advanced-ads/advanced-ads.php&amp', 'activate-plugin_advanced-ads/advanced-ads.php' ) . '">'. __('Activate Now', 'advanced-ads-genesis') .'</a>';
+		} else {
+			$link = '<a class="button button-primary" href="' . wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=' . 'advanced-ads'), 'install-plugin_' . 'advanced-ads') . '">'. __('Install Now', 'advanced-ads-genesis') .'</a>';
+		}
+		echo '<div class="error"><p>' . sprintf(__('<strong>%s</strong> requires the <strong><a href="https://wpadvancedads.com/#utm_source=advanced-ads&utm_medium=link&utm_campaign=activate-genesis" target="_blank">Advanced Ads</a></strong> plugin to be installed and activated on your site.', 'advanced-ads-genesis'), 'Genesis Ads') 
+			. '&nbsp;' . $link . '</p></div>';
 	}
 
 	/**

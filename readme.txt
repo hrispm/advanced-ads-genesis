@@ -56,6 +56,10 @@ You can use Advanced Ads along any other ad management plugin and don’t need t
 
 == Changelog ==
 
+= 1.0.5 =
+
+* updated link
+
 = 1.0.4 =
 
 * fixed more text domains
