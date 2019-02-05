@@ -1,5 +1,5 @@
 === Genesis Ads by Advanced Ads ===
-Contributors: webzunft
+Contributors: webzunft, advancedads
 Tags: genesis, adsense, ads, ad, amazon, adverts, advertisement, banner, rotation, studiopress
 Requires at least: 4.2
 Tested up to: 5.0
