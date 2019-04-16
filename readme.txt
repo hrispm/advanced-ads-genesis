@@ -16,7 +16,7 @@ Genesis Ads enables you to easily display any kind of ads – including Google A
 In order to use Genesis Ads, you also need
 
 * a theme based on the Genesis Framework built by StudioPress,
-* the free ad management plugin [Advanced Ads](http://wordpress.org/plugins/advanced-ads/).
+* the free ad management plugin [Advanced Ads](https://wordpress.org/plugins/advanced-ads/).
 
 This combination with Advanced Ads allows you to inject ads like Google AdSense, Amazon, Images ads, etc. managed by Advanced Ads into the predefined positions (called “action hooks“ many Genesis based themes have included in the frontend.
 Please be aware that your theme author might have left some of them out. Also, the styling of the content added by these hooks depends on your theme. Please contact your theme developer about styling issues.
@@ -28,10 +28,10 @@ There are currently 51 positions you can target with Genesis Ads. Among them are
 * a couple of positions around and within the header – the part where the site’s title and description and maybe also a navigation and a search form are located
 * around the main content and sidebar wrappers
 * before, within and after the main and the alternative sidebar
-* around the loop – the part where the posts and pages gets loaded, but not within the actual content itself.
-* plenty of positions around the content. You can even specify positions around the content title here.
-* around the comments, pings (websites that link to your post) and the comment form.
-* before, within and after your site’s footer.
+* around the loop – the part where the posts and pages gets loaded, but not within the actual content itself
+* plenty of positions around the content. You can even specify positions around the content title here
+* around the comments, pings (websites that link to your post) and the comment form
+* before, within and after your site’s footer
 
 Keep in mind that content positions might be repeated on overview pages like home or category pages and the ad might be injected multiple times per page.
 
@@ -45,13 +45,13 @@ When creating a new placement, select the one with the G in the symbol.
 
 After saving the new placement you find it with additional options in the placement list. Here you can specify or change the ad and select the position (see below) from the list.
 
-There are currently 51 placements in 7 logical groups. You can find extended information on them in the [Genesis Hook Reference](http://my.studiopress.com/docs/hook-reference) (Genesis login needed).
+There are currently 51 placements in 7 logical groups. You can find extended information on them in the [Genesis Hook Reference](https://my.studiopress.com/docs/hook-reference) (Genesis login needed).
 
 The positions are mostly self explanatory. When you check the reference against the positions in the Genesis placement then you should keep in mind that I removed the genesis_  prefix.
 
 == Installation ==
 
-The Genesis Ads plugin is based on the free Advanced Ads plugin, a simple and powerful ad management solution for WordPress. Before using this plugin download, install and activate Advanced Ads for free from http://wordpress.org/plugins/advanced-ads/.
+The Genesis Ads plugin is based on the free Advanced Ads plugin, a simple and powerful ad management solution for WordPress. Before using this plugin download, install and activate Advanced Ads for free from https://wordpress.org/plugins/advanced-ads/.
 You can use Advanced Ads along any other ad management plugin and don’t need to switch completely.
 
 == Changelog ==
